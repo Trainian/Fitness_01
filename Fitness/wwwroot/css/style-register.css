@@ -1,0 +1,23 @@
+#background-body{
+	background-image: url("/img/price-bg.jpg");
+}
+
+.header-section{
+	position: inherit;
+}
+
+.container-body{
+	margin-top: 50px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: white;
+}
+
+label{
+	color: #8f8fa8;
+}
+
+.pl-20{
+	padding-left: 20px;
+}
