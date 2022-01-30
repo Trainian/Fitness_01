@@ -16318,11 +16318,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_LayoutRegister.cshtml",
-      "TargetPath": "Pages\\Shared\\_LayoutRegister.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Areas/Identity/Pages/Account/ResetPassword.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
       "FileKind": "mvc"
