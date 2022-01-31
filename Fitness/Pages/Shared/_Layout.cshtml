@@ -31,16 +31,18 @@
     <link rel="stylesheet" href="~/css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="~/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="~/css/style.css" type="text/css"asp-append-version="true">
-    @await RenderSectionAsync("Head", required: false)
+    @if(AreaName == "Identity")
+    {
+    <link rel="stylesheet" href="~/css/style-register.css" type="text/css"asp-append-version="true">
+    }
+
 </head>
 
-<body>
+<body id="@(AreaName == "Identity" ? "background-body" : "")">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
-<h1>@AreaName</h1>
 
     <!-- Header Section Begin -->
     <header class="header-section">
