@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Fitness.Pages;
 
-public class PrivacyModel : PageModel
+public class AboutUs : PageModel
 {
-    private readonly ILogger<PrivacyModel> _logger;
+    private readonly ILogger<AboutUs> _logger;
 
-    public PrivacyModel(ILogger<PrivacyModel> logger)
+    public AboutUs(ILogger<AboutUs> logger)
     {
         _logger = logger;
     }

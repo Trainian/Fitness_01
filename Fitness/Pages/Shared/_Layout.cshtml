@@ -1,6 +1,8 @@
 ﻿@{
     string AreaName = string.Empty;
     object AreaNameObject;
+    var PageName = (ViewContext.RouteData.Values.GetValueOrDefault("page", "").ToString()).Split('/');
+    ViewBag["PageName"] = PageName;
     if(ViewContext.RouteData.Values.TryGetValue("area", out AreaNameObject))
     {
         AreaName = AreaNameObject.ToString();
@@ -38,14 +40,14 @@
 
 </head>
 
-<body id="@(AreaName == "Identity" ? "background-body" : "")">
+<body id='@(AreaName == "Identity" ? "background-body" : "")'>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
 
     <!-- Header Section Begin -->
-    <header class="header-section">
+    <header class='header-section @(PageName[1] != "Index" ? "header-normal" : "")'>
         <div class="container-fluid">
             <div class="logo">
                 <a href="./index.html">
@@ -63,11 +65,11 @@
                 <div class="nav-menu">
                     <nav class="mainmenu mobile-menu">
                         <ul>
-                            <li class="active"><a asp-area="" asp>Home</a></li>
-                            <li><a href="./about-us.html">About us</a></li>
-                            <li><a href="./schedule.html">Schedule</a></li>
-                            <li><a href="./gallery.html">Gallery</a></li>
-                            <li><a href="./blog.html">Blog</a>
+                            <li class='@(PageName[1] == "Index" ? "active" : "")'><a asp-page="Index" asp-area="">Home</a></li>
+                            <li class='@(PageName[1] == "About-Us" ? "active" : "")'><a asp-page="About-Us" asp-area="">About us</a></li>
+                            <li class='@(PageName[1] == "Schedule" ? "active" : "")'><a asp-page="Shedule" asp-area="">Schedule</a></li>
+                            <li class='@(PageName[1] == "Gallery" ? "active" : "")'><a href="./gallery.html">Gallery</a></li>
+                            <li class='@(PageName[1] == "Blog" ? "active" : "")'><a href="./blog.html">Blog</a>
                                 <ul class="dropdown">
                                     <li><a href="./about-us.html">About Us</a></li>
                                     <li><a href="./blog-single.html">Blog Details</a></li>
@@ -85,13 +87,8 @@
     </header>
     <!-- Header End -->
 
-        @* @if(AreaName == "Identity")
-        {
-            class="container container-body"
-        }
-     *@
 
-    <div class="@(AreaName == "Identity" ? "container container-body" : "")">
+    <div class='@(AreaName == "Identity" ? "container container-body" : "")'>
         @RenderBody()
     </div>
 

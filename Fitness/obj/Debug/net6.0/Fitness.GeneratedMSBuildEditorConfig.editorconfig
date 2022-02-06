@@ -59,6 +59,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/About-Us.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQtVXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -67,16 +71,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_AboutSection.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19BYm91dFNlY3Rpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_AboutusSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19BYm91dHVzU2VjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_BlogSection.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19CbG9nU2VjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_BreadcrumbSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19CcmVhZGNydW1iU2VjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_ChoseusSection.cshtml]
@@ -123,12 +131,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19QcmljZVBsYW5TZWN0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_TestimonialSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19UZXN0aW1vbmlhbFNlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_TrainerSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19UcmFpbmVyU2VjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_VideoSection.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WaWRlb1NlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hlZHVsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/_ViewImports.cshtml]

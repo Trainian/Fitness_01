@@ -16303,6 +16303,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_AboutusSection.cshtml",
+      "TargetPath": "Pages\\Shared\\_AboutusSection.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_BlogSection.cshtml",
       "TargetPath": "Pages\\Shared\\_BlogSection.cshtml",
       "FileKind": "mvc"
@@ -16318,13 +16323,23 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Areas/Identity/Pages/Account/ResetPassword.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_BreadcrumbSection.cshtml",
+      "TargetPath": "Pages\\Shared\\_BreadcrumbSection.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
+      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shedule.cshtml",
+      "TargetPath": "Pages\\Shedule.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/About-Us.cshtml",
+      "TargetPath": "Pages\\About-Us.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Areas/Identity/Pages/Account/ResetPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16408,6 +16423,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_TestimonialSection.cshtml",
+      "TargetPath": "Pages\\Shared\\_TestimonialSection.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_LoginPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
@@ -16420,6 +16440,11 @@
     {
       "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_MapSection.cshtml",
       "TargetPath": "Pages\\Shared\\_MapSection.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_TrainerSection.cshtml",
+      "TargetPath": "Pages\\Shared\\_TrainerSection.cshtml",
       "FileKind": "mvc"
     },
     {
