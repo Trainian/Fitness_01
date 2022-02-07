@@ -2,13 +2,11 @@
     string AreaName = string.Empty;
     object AreaNameObject;
     var PageName = (ViewContext.RouteData.Values.GetValueOrDefault("page", "").ToString()).Split('/');
-    ViewBag["PageName"] = PageName;
     if(ViewContext.RouteData.Values.TryGetValue("area", out AreaNameObject))
     {
         AreaName = AreaNameObject.ToString();
     }
 }
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -67,15 +65,15 @@
                         <ul>
                             <li class='@(PageName[1] == "Index" ? "active" : "")'><a asp-page="Index" asp-area="">Home</a></li>
                             <li class='@(PageName[1] == "About-Us" ? "active" : "")'><a asp-page="About-Us" asp-area="">About us</a></li>
-                            <li class='@(PageName[1] == "Schedule" ? "active" : "")'><a asp-page="Shedule" asp-area="">Schedule</a></li>
-                            <li class='@(PageName[1] == "Gallery" ? "active" : "")'><a href="./gallery.html">Gallery</a></li>
-                            <li class='@(PageName[1] == "Blog" ? "active" : "")'><a href="./blog.html">Blog</a>
+                            <li class='@(PageName[1] == "Shedule" ? "active" : "")'><a asp-page="Shedule" asp-area="">Schedule</a></li>
+                            <li class='@(PageName[1] == "Gallery" ? "active" : "")'><a asp-page="Gallery" asp-area="">Gallery</a></li>
+                            <li class='@(PageName[1] == "Blog" ? "active" : "")'><a asp-page="Blog" asp-area="">Blog</a>
                                 <ul class="dropdown">
-                                    <li><a href="./about-us.html">About Us</a></li>
-                                    <li><a href="./blog-single.html">Blog Details</a></li>
+                                    <li><a asp-page="About-Us" asp-area="">About Us</a></li>
+                                    <li><a asp-page="Blog-Single" asp-area="">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./contact.html">Contacts</a></li>
+                            <li><a asp-page="Contacts" asp-area="">Contacts</a></li>
                             <li><a>|</a></li>
                             <partial name="_LoginPartial"></partial>
                         </ul>

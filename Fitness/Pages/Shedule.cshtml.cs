@@ -19,6 +19,10 @@ namespace Fitness.Pages
 
         public void OnGet()
         {
+
+        ViewData["ClassSection_Title"] = "Our Classes";
+        ViewData["ClassSection_Text"] = "Our Crossfit experts can help you discover new training techniques and exercises <br> that offer a dynamic and efficient full-body workout.";
+
         }
     }
 }

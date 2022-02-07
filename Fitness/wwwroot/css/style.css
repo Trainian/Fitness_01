@@ -735,6 +735,10 @@ ol {
   Classes Section
 -----------------------*/
 
+.index-classes-bg{
+	background-image: url("/img/classes-title-bg.jpg");
+}
+
 .classes-section {
 	background: #151515;
 }

@@ -16303,6 +16303,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Gallery.cshtml",
+      "TargetPath": "Pages\\Gallery.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_AboutusSection.cshtml",
       "TargetPath": "Pages\\Shared\\_AboutusSection.cshtml",
       "FileKind": "mvc"
@@ -16415,6 +16420,11 @@
     {
       "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_ClassesSection.cshtml",
       "TargetPath": "Pages\\Shared\\_ClassesSection.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/user/Projects/Preview_Projects/Fitness_01/Fitness/Pages/Shared/_GallerySection.cshtml",
+      "TargetPath": "Pages\\Shared\\_GallerySection.cshtml",
       "FileKind": "mvc"
     },
     {

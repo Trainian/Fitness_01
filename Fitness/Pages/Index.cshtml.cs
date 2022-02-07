@@ -14,6 +14,7 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-
+        ViewData["ClassSection_Title"] = "Choose Your Program";
+        ViewData["ClassSection_Text"] = "Our Crossfit experts can help you discover new training techniques and exercises that offer a dynamic and efficient full-body workout.";
     }
 }
