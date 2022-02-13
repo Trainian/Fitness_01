@@ -1,6 +1,8 @@
    <!-- Blog Section Begin -->
     <section class="blog-section spad">
         <div class="container">
+        @if(ViewData["Title"] == "Index")
+        {
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
@@ -9,6 +11,7 @@
                     </div>
                 </div>
             </div>
+        }
             <div class="row blog-gird">
                 <div class="grid-sizer"></div>
                 <div class="col-lg-4 col-md-6 grid-item">
@@ -65,6 +68,28 @@
                     </div>
                 </div>
             </div>
+            @if(ViewData["Title"] == "Blog")
+            {
+            <div class="blog-option">
+                <div class="blog-pagination">
+                    <a href="#" class="active">1</a>
+                    of
+                    <a href="#">3</a>
+                    <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                <div class="blog-option-right">
+                    <div class="blog-result">Showing 1–3 of 12 results</div>
+                    <div class="show-result">
+                        <p>Show:</p>
+                        <select class="show-result-select">
+                            <option value="">09</option>
+                            <option value="">19</option>
+                            <option value="">29</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            }
         </div>
     </section>
     <!-- Blog Section End -->
