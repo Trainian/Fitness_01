@@ -12,13 +12,13 @@ namespace Fitness.Entityes
         public int Id {get;set;}
         public string BlogName {get;set;}
         public string CreaterName {get;set;}
-        
+
         [DataType(DataType.Date)]
         public DateTime DateCreate {get;set;}
         public string BlogText {get;set;}
-        public List<string>? BlogImages {get;set;}
-        public List<BlogTagsEnum>? BlogTags {get;set;}
-        public List<Comment>? Comments {get;set;}
-        public List<BlogTitle>? BlogTitles {get;set;}
+        public string? BlogImages {get;set;}
+        public virtual BlogTagsEnum? BlogTags {get;set;}
+        public virtual Comment? Comments {get;set;}
+        public virtual BlogTitle? BlogTitles {get;set;}
     }
 }
