@@ -15,7 +15,7 @@ namespace Fitness.Data
 
         public async Task<BlogEntity> GetBlogEntityById (int id)
         {
-            return await _db.BlogEntities.FirstOrDefaultAsync<BlogEntity>(m => m.Id == id);
+            return await _db.BlogEntities.FirstOrDefaultAsync(b => b.Id == id);
         }
     }
 }
