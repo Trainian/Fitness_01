@@ -6,17 +6,30 @@ namespace Fitness.Data;
 
 public class ApplicationDbContext : IdentityDbContext
 {
-    public DbSet<BlogEntity> BlogEntities {get;set;}
+    public DbSet<BlogEntity> BlogEntities;
+
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
-        //Database.EnsureDeleted();
-        Database.EnsureCreated();
+        // Database.EnsureDeleted();
+        // Database.EnsureCreated();
     }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
+
+        builder.Entity<BlogEntity>().HasData(
+            new BlogEntity(){
+                Id = 1,
+                BlogName = "A Closer Look At Our Front Porch Items From Lowe’s",
+                CreaterName = "Phil Martinez",
+                DateCreate = new DateTime(2019,01,30),
+                BlogText = "<p>I know how terrible it can be for you at nights and even when you wake up. The burning back pain you experience can be a terrible problem. I know that because of this burning pain, you hardly get all the sleep you need at nights. You are not alone… and thankfully there are workable solutions that you can use to not only prevent future causes, but also solve the present back pain you are experiencing. Experts have agreed that the kind of mattress you sleep on plays a very important role in back pains suffered by most people. There are some mattresses that do you a lot of harm when you sleep on them. And the fact that you spend many hours EVERYDAY on such mattresses will only mean one thing!</p><p>You are only spending more time hurting your back…without your knowledge. To solve this problem you should check the kind of mattress you are sleeping on. By simply changing the mattress for a better type, like a memory foam mattress, you can help to completely eliminate the problem of back-pain from your life.</p>",
+                BlogImages = "img/blog-single-1.jpg;img/blog-single-2.jpg;img/blog-single-3.jpg;img/blog-single-4.jpg",
+                BlogTags = BlogTagsEnum.Gym
+            }
+        );
 
         builder.Entity<BlogTitle>().HasData(
             new BlogTitle(){
@@ -32,5 +45,7 @@ public class ApplicationDbContext : IdentityDbContext
                 Text = "Whether you enjoy city breaks or extended holidays in the sun, you can always improve your travel experiences by staying in a small, charming hotel, where the atmosphere is welcoming and friendly and the service is fabulous. There are hundreds of hotels that are self-styled “boutique” places to stay, but not all of them fall into the traditional definition of boutique, which includes."
             }
         );
+        
+        
     }
 }

@@ -12,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
         //options.UseMySQL(connectionString));
     builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+    builder.Services.AddTransient<IDbContext , Fitness.Data.DbContext>();
+
     builder.Services.AddDefaultIdentity<CustomIdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
         .AddEntityFrameworkStores<ApplicationDbContext>();
     builder.Services.AddRazorPages();

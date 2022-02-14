@@ -1,4 +1,4 @@
-@page
+@page "{idBlog}"
 @model Fitness.Pages.Blog_Details
 @{
     ViewData["Title"] = "Blog_Details";
@@ -6,9 +6,9 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<partial name="_BreadcrumbBlogSection" />
+@Html.Partial("_BreadcrumbBlogSection", Model.Entity)
 
-<partial name="_BlogDetailsSection" />
+@Html.Partial("_BlogDetailsSection", Model.Entity)
 
 <partial name="_CTASection" />
 
