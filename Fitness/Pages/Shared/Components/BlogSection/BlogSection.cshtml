@@ -1,4 +1,9 @@
+@model IEnumerable<Fitness.Entityes.BlogEntity>   
    <!-- Blog Section Begin -->
+   @foreach(var ent in Model)
+   {
+       <p>@ent.BlogName.ToString()</p>
+   }
     <section class="blog-section spad">
         <div class="container">
         @if(ViewData["Title"] == "Index")

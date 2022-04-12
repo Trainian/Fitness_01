@@ -1,5 +1,6 @@
 ﻿@page
 @model IndexModel
+@addTagHelper *, TagHelpers
 @{
     ViewData["Title"] = "Index";
 }
@@ -20,7 +21,7 @@
 
     <partial name="_VideoSection"></partial>
 
-    <partial name="_BlogSection"></partial>
+    <vc:blog-section></vc:blog-section>
 
     <partial name="_CTASection"></partial>
 

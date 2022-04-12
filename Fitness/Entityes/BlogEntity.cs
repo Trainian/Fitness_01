@@ -17,6 +17,7 @@ namespace Fitness.Entityes
         public DateTime DateCreate {get;set;}
         public string BlogText {get;set;}
         public string? BlogImages {get;set;}
+        public string? BlogVideo {get;set;}
         public virtual BlogTagsEnum? BlogTags {get;set;}
         public virtual Comment? Comments {get;set;}
         public virtual BlogTitle? BlogTitles {get;set;}
