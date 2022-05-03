@@ -1,9 +1,5 @@
-@model IEnumerable<Fitness.Entityes.BlogEntity>   
+@model List<Fitness.Entityes.BlogEntity>
    <!-- Blog Section Begin -->
-   @foreach(var ent in Model)
-   {
-       <p>@ent.BlogName.ToString()</p>
-   }
     <section class="blog-section spad">
         <div class="container">
         @if(ViewData["Title"] == "Index")
@@ -20,10 +16,10 @@
             <div class="row blog-gird">
                 <div class="grid-sizer"></div>
                 <div class="col-lg-4 col-md-6 grid-item">
-                    <div class="blog-item large-item set-bg" data-setbg="img/blog/blog-1.jpg">
+                    <div class="blog-item large-item set-bg" data-setbg="@Model[0].BlogImages">
                         <a href="#" class="blog-text">
-                            <div class="categories">Gym & Croosfit</div>
-                            <h5>Many people sign up for affiliate programs</h5>
+                            <div class="categories">@Model[0].BlogTags</div>
+                            <h5>@Model[0].BlogName</h5>
                         </a>
                     </div>
                 </div>
